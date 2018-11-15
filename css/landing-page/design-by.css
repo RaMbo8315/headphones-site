@@ -1,0 +1,146 @@
+#design-by {
+    position: relative;
+    top: -200px;
+}
+
+#design-by .design-container {
+    position: relative;
+    background: white;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+#design-by .design-container .bg-container {
+    position: relative;
+    background: #5F45D0;
+    overflow: hidden;
+    padding: 45px;
+}
+
+#design-by .design-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#design-by .design-container .bg-image {
+    position: absolute;
+    width: 600px;
+    z-index: 1;
+    opacity: .3;
+    right: -200px;
+    top: -100px;
+}
+
+#design-by .design-container .info-section {
+    width: 40%;
+    display: inline-block;
+    float: left;
+}
+
+#design-by .design-container .info-section h5 {
+    color: #F7AC56;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+#design-by .design-container .info-section h3 {
+    color: white;
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+#design-by .design-container .info-section .info-list {
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+#design-by .design-container .info-section .info-list li {
+    list-style: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 14px;
+    vertical-align: top;
+}
+
+#design-by .design-container .info-section .info-list li .circle {
+    background: #F7AC56;
+    display: inline-block;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    position: relative;
+    top: 7px;
+}
+
+#design-by .design-container .info-section .white-btn {
+    background: white;
+    border-radius: 50px;
+    padding: 20px 65px;
+    text-decoration: none;
+    color: #5F45D0;
+    font-weight: 700;
+    font-size: 1rem;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+#design-by .design-container .info-section .info-list .fas {
+    position: absolute;
+    top: 6px;
+    left: 5px;
+}
+
+#design-by .design-container .icon-section {
+    width: 60%;
+    background: white;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+
+#design-by .design-container .icon-section .refresh-circle {
+    position: absolute;
+    left: 44%;
+    top: 40%;
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+}
+
+#design-by .design-container .icon-section .refresh-circle .fas {
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    color: #F7AC56;
+    font-size: 2.5rem;
+}
+
+#design-by .design-container .icon-section .icon-box {
+    width: 50%;
+    height: 224px;
+    background: white;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    border: 1px solid #ccccc808;
+    color: #5F45D0;
+    font-size: 1.3rem;
+}
+
+#design-by .design-container .icon-section .icon-box .fas,
+#design-by .design-container .icon-section .icon-box .far {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 60px;
+}

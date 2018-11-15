@@ -1,0 +1,67 @@
+header {
+    padding: 30px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header a {
+    color: #5F45D0;
+    text-decoration: none;
+}
+
+header .logo {
+    display: inline-block;
+    float: left;
+    margin-right: 28px;
+}
+
+header .logo img {
+    width: 60px;
+}
+
+header .menu {
+    display: inline-block;
+    float: left;
+    position: relative;
+    top: 10px
+}
+
+header .menu a {
+    text-transform: uppercase;
+}
+
+header .header-buttons {
+    display: inline-block;
+    float: right;
+}
+
+header .header-buttons .blue-btn {
+    background: #7F9EF4;
+    padding: 14px 46px;
+    color: white;
+    border-radius: 35px;
+    text-transform: uppercase;
+    position: relative;
+    top: 10px;
+}
+
+header .header-buttons .blue-btn .fas {
+    margin-left: 15px;
+}
+
+header .header-buttons .orange-btn {
+    background: #F7AC56;
+    padding: 14px 46px;
+    color: white;
+    border-radius: 35px;
+    text-transform: uppercase;
+    position: relative;
+    top: 10px;
+}
