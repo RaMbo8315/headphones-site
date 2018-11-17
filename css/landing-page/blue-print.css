@@ -24,6 +24,7 @@
 
 #blue-print .left-side img {
     width: 100%;
+    opacity: .2;
 }
 
 #blue-print .right-side {
@@ -124,4 +125,16 @@
     text-decoration: none;
     margin-bottom: 15px;
     color: #F7AC56;
+}
+
+@media only screen and (max-width: 1215px) {
+    
+}
+
+@media only screen and (max-width: 1023px) {
+    
+}
+
+@media only screen and (max-width: 768px) {
+
 }
