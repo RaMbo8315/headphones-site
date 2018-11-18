@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
@@ -17,16 +17,22 @@
                 <div class="logo">
                     <img src="img/logo.png">
                 </div>
-                <div class="menu">
+                <div class="mobile-menu" onclick="menu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="main-menu">
                     <a href="#">Features</a>
                     <a href="#">Gallery</a>
                     <a href="#">Tech Spec</a>
                     <a href="#">Support</a>
                 </div>
-                <div class="header-buttons">
-                    <a href="#" class="blue-btn box-shadow-down">Show bag <i class="fas fa-shopping-bag"></i></a>
-                    <a href="#" class="orange-btn box-shadow-down">Sign up</a>
-                </div>
+            </div>
+            <div class="header-buttons">
+                <a href="#" class="blue-btn box-shadow-down">Show bag <i class="fas fa-shopping-bag"></i></a>
+                <a href="#" class="orange-btn box-shadow-down">Sign up</a>
+            </div>
             </div>
         </header>
         <div class="container">
@@ -138,7 +144,7 @@
                     </div>
                     <div class="info-box box-shadow-center">
                         <h2>
-                            <span class="orange">The</span>
+                            <span class="teal">The</span>
                             <span class="blue">Color</span>
                             <span class="purple">Collection</span>
                         </h2>
@@ -159,41 +165,44 @@
         </div>
     </section>
     <section id="blue-print">
-        <div class="container">
-            <div class="left-side">
-                <img src="img/img2.png" alt="">
-            </div>
-            <div class="right-side">
-                <h1>Streamlined,<br>
-                    on-ear wearing<br>
-                    style</h1>
-                <div class="info-box bluetooth">
-                    <div class="col-1">
-                        <div class="icon-container">
-                            <div class="dashed-circle">
-                            </div>
-                            <i class="fab fa-bluetooth-b"></i>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <h3>Bluetooth</h3>
-                        <p>Bluetooth 4.2 acc codex</p>
-                        <a href="#">Learn more</a>
-                    </div>
+        <img src="img/waveFlip.png" alt="" class="wave">
+        <div class="blue-print-container">
+            <div class="container">
+                <div class="left-side">
+                    <img src="img/img2.png" alt="">
                 </div>
-                <div class="info-box microphone">
-                    <div class="col-1">
-                        <div class="icon-container second">
-                            <div class="dashed-circle">
+                <div class="right-side">
+                    <h1>Streamlined,<br>
+                        on-ear wearing<br>
+                        style</h1>
+                    <div class="info-box bluetooth">
+                        <div class="col-1">
+                            <div class="icon-container">
+                                <div class="dashed-circle">
+                                </div>
+                                <i class="fab fa-bluetooth-b"></i>
                             </div>
-                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <div class="col-2">
+                            <h3>Bluetooth</h3>
+                            <p>Bluetooth 4.2 acc codex</p>
+                            <a href="#">Learn more</a>
                         </div>
                     </div>
-                    <div class="col-2">
-                        <h3>Microphone</h3>
-                        <p>Supports Apple Siri and Google<br>
-                            Now voice command</p>
-                        <a href="#">Learn more</a>
+                    <div class="info-box microphone">
+                        <div class="col-1">
+                            <div class="icon-container second">
+                                <div class="dashed-circle">
+                                </div>
+                                <i class="fas fa-microphone"></i>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <h3>Microphone</h3>
+                            <p>Supports Apple Siri and Google<br>
+                                Now voice command</p>
+                            <a href="#">Learn more</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -270,42 +279,52 @@
         </div>
     </section>
     <footer>
+        <img src="img/waveFlip.png" alt="" class="wave">
         <div class="container">
-            <h2><span>Comfort</span> and Materials</h2>
-            <ul class="menu">
-                <li>
-                    <a href="#">Features</a>
-                </li>
-                <li>
-                    <a href="#">Gallery</a>
-                </li>
-                <li>
-                    <a href="#">Tech Specs</a>
-                </li>
-                <li>
-                    <a href="#">Support</a>
-                </li>
-            </ul>
-            <p>&#9400; copyright. All rights reserved</p>
-            <ul class="social-media">
-                <li>
-                    <a href="#" target="new">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="new">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="new">
-                        <i class="fab fa-google"></i>
-                    </a>
-                </li>
-            </ul>
+            <div class="footer-container">
+                <h2><span>Comfort</span> and Materials</h2>
+                <ul class="menu">
+                    <li>
+                        <a href="#">Features</a>
+                    </li>
+                    <li>
+                        <a href="#">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#">Tech Specs</a>
+                    </li>
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+                </ul>
+                <p>&#9400; copyright. All rights reserved</p>
+                <ul class="social-media">
+                    <li>
+                        <a href="#" target="new">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="new">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="new">
+                            <i class="fab fa-google"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/index.js"></script>
+    <script>
+        function menu(x) {
+            x.classList.toggle("change");
+        }
+    </script>
 </body>
 
 </html>

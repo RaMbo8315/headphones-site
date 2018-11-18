@@ -7,8 +7,16 @@
     /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(135deg, #e665f2 0%, #824bf2 28%, #824bf2 80%, #b0b2f4 96%, #ffffff 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    padding: 170px 0;
+    /* padding: 170px 0; */
     color: white;
+}
+
+#blue-print .wave {
+    width: 100%;
+}
+
+#blue-print .blue-print-container {
+    padding-bottom: 50px;
 }
 
 #blue-print .container:after {
@@ -71,8 +79,8 @@
     height: 160px;
     border-radius: 50%;
     border: 5px solid #fff;
-    border-bottom-color: #F7AC56;
-    border-left-color: #F7AC56;
+    border-bottom-color: #33f4e7;
+    border-left-color: #33f4e7;
     position: relative;
 }
 
@@ -124,7 +132,7 @@
     text-transform: uppercase;
     text-decoration: none;
     margin-bottom: 15px;
-    color: #F7AC56;
+    color: #33f4e7;
 }
 
 @media only screen and (max-width: 1215px) {

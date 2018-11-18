@@ -12,7 +12,7 @@ header:after {
 }
 
 header a {
-    color: #5F45D0;
+    color: #7F9EF4;
     text-decoration: none;
 }
 
@@ -24,9 +24,40 @@ header .logo {
 
 header .logo img {
     width: 60px;
+    cursor: pointer;
+}
+/*
+mobile menu
+*/
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    left: 30%;
 }
 
-header .menu {
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #7F9EF4;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+header .main-menu {
     display: inline-block;
     float: left;
     position: relative;
@@ -35,6 +66,12 @@ header .menu {
 
 header .menu a {
     text-transform: uppercase;
+    padding: 5px;
+}
+
+header .menu a:hover {
+    /* opacity: .6; */
+    text-shadow: 2px 2px 5px #7F9EF4
 }
 
 header .header-buttons {
@@ -52,12 +89,16 @@ header .header-buttons .blue-btn {
     top: 10px;
 }
 
+header .header-buttons .blue-btn:hover {
+    opacity: .6;
+}
+
 header .header-buttons .blue-btn .fas {
     margin-left: 15px;
 }
 
 header .header-buttons .orange-btn {
-    background: #F7AC56;
+    background: #33f4e7;
     padding: 14px 46px;
     color: white;
     border-radius: 35px;
@@ -66,14 +107,12 @@ header .header-buttons .orange-btn {
     top: 10px;
 }
 
-@media only screen and (max-width: 1215px) {
-    
+header .header-buttons .orange-btn:hover {
+    opacity: .6;
 }
 
-@media only screen and (max-width: 1023px) {
-    
-}
+@media only screen and (max-width: 1215px) {}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {}
 
-}
+@media only screen and (max-width: 768px) {}

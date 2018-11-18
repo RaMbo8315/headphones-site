@@ -77,6 +77,7 @@
     font-size: 1rem;
     text-transform: uppercase;
     width: 230px;
+    cursor: pointer;
 }
 
 #top-jumbo .left-side .info-container .email-area button {
@@ -87,6 +88,11 @@
     font-size: 1rem;
     text-transform: uppercase;
     border: 0;
+    cursor: pointer;
+}
+
+#top-jumbo .left-side .info-container .email-area button:hover {
+    opacity: .6;
 }
 
 #top-jumbo .right-side {
@@ -274,6 +280,6 @@
 
     #top-jumbo .right-side {
         width: 100%;
-        margin-top: -160px;
+        margin-top: -30px;
     }
 }

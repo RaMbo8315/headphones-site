@@ -1,8 +1,16 @@
 footer {
     background: #5F45D0;
-    padding: 80px 0;
+    /* padding: 80px 0; */
     text-align: center;
     color: white;
+}
+
+footer .wave {
+    width: 100%;
+}
+
+footer .footer-container {
+    padding: 50px 0;
 }
 
 footer h2 {
@@ -15,7 +23,7 @@ footer h2 {
 
 footer h2 span {
     font-weight: 700;
-    color: aqua
+    color: #33f4e7;
 }
 
 footer .menu {
