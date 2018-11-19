@@ -12,29 +12,48 @@
 
 <body>
     <section id="top-jumbo">
-        <header>
-            <div class="container-fluid">
-                <div class="logo">
-                    <img src="img/logo.png">
-                </div>
-                <div class="mobile-menu" onclick="menu(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-                <div class="main-menu">
-                    <a href="#">Features</a>
-                    <a href="#">Gallery</a>
-                    <a href="#">Tech Spec</a>
-                    <a href="#">Support</a>
-                </div>
+        <div class="flip-container">
+            <div class="flipper">
+                <header>
+                    <div class="front">
+                        <div class="container-fluid">
+                            <div class="logo">
+                                <img src="img/logo.png">
+                            </div>
+                            <div class="mobile-menu" onclick="menu(this)">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                            <div class="main-menu">
+                                <a href="#">Features</a>
+                                <a href="#">Gallery</a>
+                                <a href="#">Tech Spec</a>
+                                <a href="#">Support</a>
+                            </div>
+                        </div>
+                        <div class="header-buttons">
+                            <a href="#" class="blue-btn box-shadow-down">Show bag <i class="fas fa-shopping-bag"></i></a>
+                            <a href="#" class="orange-btn box-shadow-down">Sign up</a>
+                        </div>
+
+                    </div>
+                    <div class="back">
+                        <div class="back-mobile-menu" onclick="closeMenu(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                        <div class="back-menu">
+                            <a href="#">Features</a>
+                            <a href="#">Gallery</a>
+                            <a href="#">Tech Spec</a>
+                            <a href="#">Support</a>
+                        </div>
+                    </div>
+                </header>
             </div>
-            <div class="header-buttons">
-                <a href="#" class="blue-btn box-shadow-down">Show bag <i class="fas fa-shopping-bag"></i></a>
-                <a href="#" class="orange-btn box-shadow-down">Sign up</a>
-            </div>
-            </div>
-        </header>
+        </div>
         <div class="container">
             <div class="left-side">
                 <div class="large-number">
@@ -322,7 +341,13 @@
     <script src="assets/javascript/index.js"></script>
     <script>
         function menu(x) {
-            x.classList.toggle("change");
+            // x.classList.toggle("change");
+            $(".flip-container .flipper, .flip-container.hover .flipper").css("transform", "rotateX(180deg)")
+        }
+
+        function closeMenu(x) {
+            // x.classList.toggle("change");
+            $(".flip-container .flipper, .flip-container.hover .flipper").css("transform", "rotateX(0deg)")
         }
     </script>
 </body>
