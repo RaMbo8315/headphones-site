@@ -1,0 +1,126 @@
+.sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #7f9ef4;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #7f9ef4 1%, #7f9ef4 1%, #bfccef 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #7f9ef4 1%, #7f9ef4 1%, #bfccef 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #7f9ef4 1%, #7f9ef4 1%, #bfccef 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.sideNav .sidelinks {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.sideNav a {
+    padding: 8px 8px 19px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sideNav a:hover {
+    color: #f1f1f1;
+}
+
+.sideNav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sideNav .logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 45px;
+}
+
+.sideNav .logo img {
+    width: 60px;
+    cursor: pointer;
+}
+
+.sideNav .sideNav-buttons {
+    display: inline-block;
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+
+.sideNav .sideNav-buttons a {
+    font-size: 20px;
+}
+
+.sideNav .sideNav-buttons .blue-btn {
+    background: #5F45D0;
+    padding: 20px 26px;
+    color: white;
+    border-radius: 35px;
+    text-transform: uppercase;
+    top: 10px;
+    margin-right: 8px;
+}
+
+.sideNav .sideNav-buttons .blue-btn:hover {
+    opacity: .6;
+}
+
+.sideNav .sideNav-buttons .blue-btn .fas {
+    margin-left: 15px;
+}
+
+.sideNav .sideNav-buttons .orange-btn {
+    background: #33f4e7;
+    padding: 20px 26px;
+    color: white;
+    border-radius: 35px;
+    text-transform: uppercase;
+    position: relative;
+    top: 10px;
+}
+
+.sideNav .sideNav-buttons .orange-btn:hover {
+    opacity: .6;
+}
+
+@media screen and (max-width: 599px) {
+    .sideNav .sideNav-buttons .blue-btn, .sideNav .sideNav-buttons .blue-btn {
+        padding: 20px 20px;
+    }
+}
+
+@media screen and (max-width: 562px) {
+    .sideNav .sideNav-buttons {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .sideNav .sideNav-buttons {
+        width: 75%;
+    }
+}

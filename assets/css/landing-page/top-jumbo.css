@@ -1,5 +1,6 @@
 #top-jumbo {
     padding: 0 0 400px;
+    padding-top: 10px;
     background: #ffffff;
     /* Old browsers */
     background: -moz-linear-gradient(-45deg, #ffffff 25%, #ffffff 25%, #ffffff 25%, #b0b2f4 63%, #b2b3f7 63%, #824bf2 80%, #e665f2 100%);
@@ -41,7 +42,7 @@
 #top-jumbo .left-side .info-container h1 {
     font-size: 4.5rem;
     color: #7F9EF4;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     margin-bottom: 1.5rem;
     line-height: 1.1;
 }
@@ -146,6 +147,7 @@
 @media only screen and (max-width: 1023px) {
     #top-jumbo {
         padding: 0 0 300px;
+        padding-top: 10px;
     }
 
     #top-jumbo .left-side {
@@ -250,7 +252,7 @@
     }
 
     #top-jumbo .left-side .info-container .email-area {
-        width: 100%;
+        width: 80%;
     }
 
     #top-jumbo .left-side .info-container .email-area .far {
