@@ -181,7 +181,6 @@
 @media only screen and (max-width: 768px) {
     #design-by .design-container .info-section {
         width: 100%;
-        padding: 20px;
     }
 
     #design-by .design-container .icon-section {
@@ -213,7 +212,17 @@
 }
 
 @media only screen and (max-width: 500px) {
+    #design-by .design-container .info-section h3 {
+        font-size: 2rem;
+    }
+
     #design-by .design-container .icon-section .refresh-circle {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #design-by .design-container .info-section h3 {
+        font-size: 2rem;
     }
 }

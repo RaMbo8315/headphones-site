@@ -285,3 +285,27 @@
         margin-top: -30px;
     }
 }
+
+@media only screen and (max-width: 440px) {
+    #top-jumbo .left-side .large-number {
+        font-size: 210px;
+    }
+    #top-jumbo .left-side .info-container h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    #top-jumbo .left-side .info-container h1 {
+        font-size: 2.3rem;
+    }
+
+    #top-jumbo .left-side .info-container .email-area {
+        display: none;
+    }
+
+    #top-jumbo .right-side {
+        margin-top: -80px;
+    }
+}

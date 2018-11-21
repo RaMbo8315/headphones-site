@@ -185,6 +185,132 @@
 
 @media only screen and (max-width: 1215px) {}
 
-@media only screen and (max-width: 1023px) {}
+@media only screen and (max-width: 1020px) {
 
-@media only screen and (max-width: 768px) {}
+    #color-collection {
+        position: relative;
+        top: -100px;
+        padding: 0 0 100px;
+    }
+
+    #color-collection .left-side {
+        width: 100%;
+        float: none;
+        text-align: center;
+        top: -110px;
+        position: relative;
+    }
+
+    #color-collection .right-side {
+        width: 100%;
+    }
+
+    #color-collection .right-side .col-1 {
+        float: left;
+        width: 60%;
+    }
+
+    #color-collection .right-side .swatch-area {
+        float: right;
+    }
+
+    #color-collection .right-side .info-box {
+        float: right;
+    }
+
+    #color-collection .right-side .col-2 {
+        float: right;
+        width: 40%;
+        text-align: center;
+        margin-top: 95px;
+    }
+
+    #color-collection .right-side .color-slider {
+        display: inline-block;
+    }
+
+    #color-collection .right-side .color-slider {
+        height: 550px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+
+    #color-collection .right-side .col-1 {
+        width: 65%;
+    }
+
+    #color-collection .right-side .col-2 {
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    #color-collection .right-side .col-1 {
+        width: 70%;
+    }
+
+    #color-collection .right-side .col-2 {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    #color-collection .left-side {
+        top: -170px;
+    }
+
+    #color-collection .right-side .col-1 {
+        width: 75%;
+    }
+
+    #color-collection .right-side .swatch-area {
+        margin-top: 0;
+    }
+
+    #color-collection .right-side .col-2 {
+        width: 25%;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+
+    #color-collection .right-side .col-1 {
+        width: 80%;
+    }
+
+    #color-collection .right-side .col-2 {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 422px) {
+
+    #color-collection .right-side .col-1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #color-collection .right-side .swatch-area {
+        float: none;
+    }
+
+    #color-collection .right-side .info-box {
+        float: none;
+    }
+
+    #color-collection .right-side .col-2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 422px) {
+
+    #color-collection .right-side .swatch-area {
+        display: none;
+    }
+
+}
