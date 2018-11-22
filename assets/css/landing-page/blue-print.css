@@ -49,10 +49,6 @@
     margin-bottom: 70px;
 }
 
-#blue-print .right-side .info-box {
-    padding: 0 0 80px;
-}
-
 #blue-print .right-side .info-box:after {
     content: "";
     display: table;
@@ -64,27 +60,7 @@
     float: left;
 }
 
-#blue-print .right-side .info-box.bluetooth .col-1 .icon-container {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    border-top-color: #CC90B5;
-    border-right-color: #CC90B5;
-    position: relative;
-}
-
-#blue-print .right-side .info-box.microphone .col-1 .icon-container {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    border-bottom-color: #33f4e7;
-    border-left-color: #33f4e7;
-    position: relative;
-}
-
-#blue-print .right-side .info-box .col-1 .icon-container .dashed-circle {
+#blue-print .right-side .info-box .col-1 .spinner .dashed-circle {
     width: 130px;
     height: 130px;
     border-radius: 50%;
@@ -95,8 +71,8 @@
     left: 10px;
 }
 
-#blue-print .right-side .info-box .col-1 .icon-container .fab,
-#blue-print .right-side .info-box .col-1 .icon-container .fas {
+#blue-print .right-side .info-box .col-1 .spinner .fab,
+#blue-print .right-side .info-box .col-1 .spinner .fas {
     font-size: 4.5rem;
     position: absolute;
     top: 40px;
@@ -106,6 +82,8 @@
 #blue-print .right-side .info-box .col-2 {
     width: 60%;
     float: left;
+    position: relative;
+    top: 54px;
 }
 
 #blue-print .right-side .info-box .col-2 h3 {
@@ -127,12 +105,21 @@
     color: #CC90B5;
 }
 
+#blue-print .right-side .info-box.bluetooth .col-2 a:hover {
+    text-shadow: 2px 2px 5px #CC90B5
+}
+
+
 #blue-print .right-side .info-box.microphone .col-2 a {
     font-size: .9rem;
     text-transform: uppercase;
     text-decoration: none;
     margin-bottom: 15px;
     color: #33f4e7;
+}
+
+#blue-print .right-side .info-box.microphone .col-2 a:hover {
+    text-shadow: 2px 2px 5px #33f4e7
 }
 
 @media only screen and (max-width: 1215px) {
@@ -173,6 +160,7 @@
 
     #blue-print .right-side .info-box .col-2 {
         width: 100%;
+        top: 0;
     }
 
     #blue-print .right-side .info-box .col-2 p, #blue-print .right-side .info-box .col-2 a {
