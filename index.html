@@ -372,31 +372,31 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- <script src="assets/javascript/index.js"></script> -->
     <script>
-
         $(document).ready(function () {
-    console.log($(document).width());
-    var width = $(window).innerWidth();
-    if (width <= 1028) {
-        $(".main-menu").css("display", "none")
-        $(".mobile-menu").css("display", "block");
-    }
+            console.log($(document).width());
+            var width = $(window).innerWidth();
+            if (width <= 1028) {
+                $(".main-menu").css("display", "none")
+                $(".mobile-menu").css("display", "block");
+            }
 
 
-    $(window).resize(function () {
-        var width = $(window).innerWidth();
-        if (width <= 1028) {
-            $(".main-menu").css("display", "none");
-            $(".mobile-menu").css("display", "block");
-        } else if (width >= 1028) {
-            $(".main-menu").css("display", "block");
-            $(".mobile-menu").css("display", "none");
-            $(".flip-container .flipper, .flip-container.hover .flipper").css("transform", "rotateX(0deg)")
-        }
-        if(width >= 629) {
-            $(".sideNav").css("width", "0");
-        }
-    })
-});
+            $(window).resize(function () {
+                var width = $(window).innerWidth();
+                if (width <= 1028) {
+                    $(".main-menu").css("display", "none");
+                    $(".mobile-menu").css("display", "block");
+                } else if (width >= 1028) {
+                    $(".main-menu").css("display", "block");
+                    $(".mobile-menu").css("display", "none");
+                    $(".flip-container .flipper, .flip-container.hover .flipper").css("transform",
+                        "rotateX(0deg)")
+                }
+                if (width >= 629) {
+                    $(".sideNav").css("width", "0");
+                }
+            })
+        });
 
         function menu(x) {
             $(".flip-container .flipper, .flip-container.hover .flipper").css("transform", "rotateX(180deg)")
@@ -407,17 +407,23 @@
         }
 
         function openNav() {
-                    var width = $(window).innerWidth();
-                    if (width <= 484) {
-                        $(".sideNav").css("width", "100%");
-                    } else if (width <= 629) {
-                        $(".sideNav").css("width", "75%");
-                    }
-                }
-
-            function closeNav() {
-                $("#sideNav").css("width", "0");
+            var width = $(window).innerWidth();
+            if (width <= 484) {
+                $(".sideNav").css("width", "100%");
+            } else if (width <= 629) {
+                $(".sideNav").css("width", "75%");
             }
+        }
+
+        function closeNav() {
+            $("#sideNav").css("width", "0");
+        }
+
+        document.addEventListener('click', function (e) {
+            var snav = document.getElementById("sideNav");
+            if (e.target.id !== snav.id && !snav.contains(e.target) && !e.target.className.match('mobile-nav-menu'))
+                closeNav();
+        }, false);
     </script>
 </body>
 
