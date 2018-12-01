@@ -76,7 +76,7 @@ mobile menu
 #top-jumbo .flip-container .flipper header .mobile-nav .mobile-nav-menu {
     cursor: pointer;
     position: absolute;
-    left: 80%;
+    left: 77%;
 }
 
 #top-jumbo .flip-container .flipper header .front .main-menu {
@@ -211,10 +211,6 @@ animation
     left: 0;
 }
 
-@media only screen and (max-width: 1215px) {}
-
-@media only screen and (max-width: 1023px) {}
-
 @media only screen and (max-width: 1045px) {
     header .header-buttons {
         display: inline-block;
@@ -231,8 +227,6 @@ animation
     }
 }
 
-@media only screen and (max-width: 768px) {}
-
 @media only screen and (max-width: 645px) {
 
     .front,
@@ -243,4 +237,12 @@ animation
     #top-jumbo .flip-container .flipper header .mobile-nav {
         display: block;
     }
+}
+
+@media only screen and (max-width: 645px) {
+
+    #top-jumbo .flip-container .flipper header .mobile-nav .mobile-nav-menu {
+        left: 77%;
+    }
+
 }
